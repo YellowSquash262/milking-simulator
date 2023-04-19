@@ -1,0 +1,28 @@
+body {
+         background-color: rgb(183, 209, 225);
+      }
+/* center align the image */
+img {
+	display: block;
+	margin: 0 auto;
+  position: absolute; 
+  left: 30%;
+  top: -200px;
+}
+
+/* add a hover effect */
+img:hover {
+	cursor: pointer;
+}
+
+/* add the animation */
+@keyframes moveUpAndDown {
+	0% { transform: translateY(0); }
+	10% { transform: translateY(20px); }
+	100% { transform: translateY(0); }
+}
+
+/* apply the animation when the image is clicked */
+.clicked {
+	animation: moveUpAndDown 0.4s ;
+}
